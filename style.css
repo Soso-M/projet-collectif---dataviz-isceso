@@ -11,7 +11,7 @@
     flex-direction: row;
 }
 
-.bubble {
+.bubble, #bubbletest {
     width: 50px;
     height: 50px;
     flex-direction: column;

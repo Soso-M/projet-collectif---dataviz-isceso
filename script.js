@@ -1,3 +1,13 @@
+const translate = require('translate-google')
+function translatefunc (tranObj) {
+  translate(tranObj, {from: 'fr', to:'ja'}).then(res => {
+    console.log("en japonais : " + res)
+  }).catch(err => {
+    console.error(err)
+  });
+};
+translatefunc('chat');
+
 var id = null;
 function myMove() {
   var elem = document.getElementById("bubbleTrio");   
@@ -15,11 +25,4 @@ function myMove() {
   }
 };
 
-const translate = require('translate-google')
-const tranObj = 'Je suis une développeuse'
 
-translate(tranObj, {from: 'fr', to:'ja'}).then(res => {
-    console.log(res)
-}).catch(err => {
-    console.error(err)
-})
