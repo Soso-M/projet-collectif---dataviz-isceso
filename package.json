@@ -1,0 +1,22 @@
+{
+  "name": "projet-collectif---dataviz-isceso",
+  "version": "1.0.0",
+  "description": "DataViz",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adatechschool/projet-collectif---dataviz-isceso.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adatechschool/projet-collectif---dataviz-isceso/issues"
+  },
+  "homepage": "https://github.com/adatechschool/projet-collectif---dataviz-isceso#readme",
+  "dependencies": {
+    "translate-google": "^1.5.0"
+  }
+}
