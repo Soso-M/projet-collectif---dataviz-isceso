@@ -1,12 +1,13 @@
 const translate = require('translate-google')
 function translatefunc (tranObj) {
-  translate(tranObj, {from: 'fr', to:'ja'}).then(res => {
-    console.log("en japonais : " + res)
+  translate(tranObj, {from: 'fr', to:'en'}).then(res => {
+    console.log("en anglais : " + res)
   }).catch(err => {
     console.error(err)
   });
 };
-translatefunc('chat');
+
+console.log(translatefunc('chat'));
 
 var id = null;
 function myMove() {

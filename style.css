@@ -1,3 +1,4 @@
+
 #container {
     width: 400px;
     height: 400px;
@@ -11,12 +12,19 @@
     flex-direction: row;
 }
 
-.bubble, #bubbletest {
+.bubble {
     width: 50px;
     height: 50px;
     flex-direction: column;
     background-color: white;
     border-radius: 100%;
     line-height: 50px;
+    text-align: center;
+}
+
+.bubble:hover {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
     text-align: center;
 }
