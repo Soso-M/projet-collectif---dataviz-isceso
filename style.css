@@ -1,17 +1,54 @@
-body {
-    background-color: #5C8B9A;
+:root{
+    --hauteur-menu: 60px;
+  }
+
+ * {
+    margin: 5px;
+    padding: 5px;
     font-family: 'Fredoka One', cursive;
+    background-color: #5C8B9A;
+  }
 
-}
 h1 {
-
     text-align: center;
     font-size: 5em;
-
 }
 
 h1:hover {
     color: #C1AFA1;
+}
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
 }
 
 #container_menu {
@@ -26,34 +63,8 @@ h1:hover {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
-
-nav {
-    width: 100% ;
-    position: sticky;
-    top: 0;
-
-}
-nav > ul{
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    font-size: 2em;
-
-
-}
-nav ul {
-    list-style-type: none;
-}
-
-nav > ul > li {
-    position : relative;
-  
-
-}
-
 
 #container {
     width: 400px;
