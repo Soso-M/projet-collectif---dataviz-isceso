@@ -1,14 +1,3 @@
-const translate = require('translate-google')
-function translatefunc (tranObj) {
-  translate(tranObj, {from: 'fr', to:'en'}).then(res => {
-    console.log("en anglais : " + res)
-  }).catch(err => {
-    console.error(err)
-  });
-};
-
-console.log(translatefunc('chat'));
-
 var id = null;
 function myMove() {
   var elem = document.getElementById("bubbleTrio");   
@@ -25,5 +14,17 @@ function myMove() {
     }
   }
 };
+
+function initBubble() {
+  document.getElementsByClassName('bubble')[0].addEventListener('click', onClick);
+  document.getElementsByClassName('bubble')[1].addEventListener('click', onClick);
+  document.getElementsByClassName('bubble')[2].addEventListener('click', onClick);
+}
+initBubble();
+
+function onClick(event) {
+  var message = event.target.textContent;
+  console.log(message);
+}
 
 
