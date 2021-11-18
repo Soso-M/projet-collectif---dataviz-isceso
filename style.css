@@ -14,9 +14,10 @@ h1 {
     font-size: 5em;
 }
 
-h1:hover {
+#menu-deroulant > .continent :hover {
     color: #C1AFA1;
 }
+
 #menu-deroulant, #menu-deroulant ul {
     padding: 0;
     margin: 0;
@@ -61,18 +62,18 @@ h1:hover {
 #container_menu {
     width: 100vw;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
+
 }
 
 #title {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
+    position: relative;
+    top : 25%;
     justify-content: center; 
 }
 
+/* style de la deuxième page */
 #container {
     width: 400px;
     height: 400px;
