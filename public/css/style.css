@@ -73,6 +73,7 @@ h1 {
     justify-content: center; 
 }
 
+<<<<<<< HEAD:style.css
 
 #time { 
     position: absolute;
@@ -90,13 +91,17 @@ h1 {
        
   }
 
+=======
+#div_horloge {
+    text-align: bottom;
+}
+>>>>>>> b8f1cd90ee6845b8508a259956f35ddf3108e91e:public/css/style.css
 
 /* style de la deuxième page */
 #container {
     width: 400px;
     height: 400px;
     position: relative;
-    background-image: url(./lac-de-landro.jpeg);
   }
   
 #bubbleTrio {

@@ -13,6 +13,7 @@ function myMove() {
       //elem.style.left = pos + 'px'; 
     }
   }
+<<<<<<< HEAD
 };
 
 const translate = require('translate-google')
@@ -24,3 +25,6 @@ translate(tranObj, {from: 'fr', to:'ja'}).then(res => {
     console.error(err)
 })
 //afficher l'heure en temps reel 
+=======
+};
+>>>>>>> b8f1cd90ee6845b8508a259956f35ddf3108e91e
