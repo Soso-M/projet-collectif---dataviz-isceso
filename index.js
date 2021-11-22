@@ -3,9 +3,19 @@ const port = 3000;
 const express = require('express');
 const app = express();
 const router = express.Router();
-const translate = require('translate-google')
+const translate = require('translate-google');
+const data = require('./data.json');
+
+function getHourForData() {
+    const date = new Date();
+    const heure = date.getHours();
+    return heure;
+}
+getHourForData();
+
 const tranObj = {
-    text: 'Un chat bleu'
+    text: data[getHourForData()],
+    fr : data[getHourForData()]
 }
 
 app.set('view engine', 'ejs');
@@ -22,7 +32,7 @@ app.get('/:lang', async function (req, res) {
     const language = req.params.lang;
     translate(tranObj, {from: 'fr', to:`${language}`}).then(trad => {
         console.log(trad);
-        res.render('page', {traduction: trad.text})
+        res.render('page', {traduction: trad.text, vf: tranObj.fr})
     }).catch(err => {
         console.error(err)
     });
