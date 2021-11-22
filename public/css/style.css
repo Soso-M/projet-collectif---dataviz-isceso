@@ -73,6 +73,10 @@ h1 {
     justify-content: center; 
 }
 
+#div_horloge {
+    text-align: bottom;
+}
+
 /* style de la deuxième page */
 #container {
     width: 400px;

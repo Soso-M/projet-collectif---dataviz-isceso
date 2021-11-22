@@ -14,12 +14,3 @@ function myMove() {
     }
   }
 };
-
-const translate = require('translate-google')
-const tranObj = 'Je suis une développeuse'
-
-translate(tranObj, {from: 'fr', to:'ja'}).then(res => {
-    console.log(res)
-}).catch(err => {
-    console.error(err)
-})
