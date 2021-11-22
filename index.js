@@ -5,7 +5,7 @@ const app = express();
 const router = express.Router();
 const translate = require('translate-google')
 const tranObj = {
-    text: 'Une planète qui tourne'
+    text: 'Un chat bleu'
 }
 
 app.set('view engine', 'ejs');
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.render('menu')
 })
 
-app.get('/views/page/:lang', async function (req, res) {
+app.get('/:lang', async function (req, res) {
     console.log(req.params);
     const language = req.params.lang;
     translate(tranObj, {from: 'fr', to:`${language}`}).then(trad => {
