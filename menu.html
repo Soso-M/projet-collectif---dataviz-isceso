@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="planet.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
     </style>
-    <title>What word is it?</title>
+    <title>"What word is it?"</title>
 </head>
 <body>
     <nav>
@@ -48,8 +50,40 @@
     <div id= "container_menu">
         <div id= "title">
             <h1>What word is it ?</h1> 
-        </div>
-    </div>
+            <img alt ="image" src="bluePlanet.png" width="400" height = 400>                                
+              <img  alt="image" src="clock.png" width="200" height="300">
+              <div id="time">
+              
+              </div>
+              <script>
+                function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                document.getElementById('time').innerHTML =
+                h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+                }
+                function checkTime(i) {
+                    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                    return i;
+                }
+                
+                startTime();
+                checkTime();
+                </script>
+    
+        </div>  
+
+     
+      </div>
+
+     </script>
+           
+  
+
     
 </body>
 </html>

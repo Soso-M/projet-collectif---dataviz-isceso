@@ -23,3 +23,4 @@ translate(tranObj, {from: 'fr', to:'ja'}).then(res => {
 }).catch(err => {
     console.error(err)
 })
+//afficher l'heure en temps reel 
