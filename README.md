@@ -18,6 +18,8 @@ git checkout NAME_BRANCHE
 ## pull
 git pull
 
+
+git remote add origin git@github.com:Soso-M/adatechschool/projet-collectif---dataviz-isceso.git 
 # DataViz
 
 Groupe :
