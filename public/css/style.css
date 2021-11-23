@@ -120,3 +120,7 @@ h1 {
     text-align: center;
 }
 
+.oneWordPerHour {
+    position : absolute;
+    display : flex;
+}
