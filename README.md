@@ -1,16 +1,16 @@
 # How to run the project
 
-git checkout NAME_BRANCHE
-npm install
-node index.js
+git checkout NAME_BRANCHE <br />
+npm install <br />
+node index.js <br />
 
 go to http://localhost:3000/
 
 # GIT
 ## How to push
-git add .
-git commit -m "message"
-git push
+git add . <br />
+git commit -m "message" <br />
+git push origin NAME_BRANCHE <br />
 
 ## Switch branch
 git checkout NAME_BRANCHE
@@ -19,7 +19,12 @@ git checkout NAME_BRANCHE
 git pull
 
 
-git remote add origin git@github.com:Soso-M/adatechschool/projet-collectif---dataviz-isceso.git 
+## Set up the push for the first time
+git remote add origin git@github.com:adatechschool/projet-collectif---dataviz-isceso.git  <br />
+
+
+
+
 # DataViz
 
 Groupe :
