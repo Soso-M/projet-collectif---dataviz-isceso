@@ -73,29 +73,9 @@ h1 {
     justify-content: center; 
 }
 
-<<<<<<< HEAD:style.css
-
-#time { 
-    position: absolute;
-    width: 400px;
-    height: 100px;
-    font-size: 50px;
-    font-family: 'Port Lligat Sans', sans-serif;
-    color: #070505;
-    text-shadow:
-     -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
-      
-       
-  }
-
-=======
 #div_horloge {
     text-align: bottom;
 }
->>>>>>> b8f1cd90ee6845b8508a259956f35ddf3108e91e:public/css/style.css
 
 /* style de la deuxième page */
 #container {
@@ -103,24 +83,11 @@ h1 {
     height: 400px;
     position: relative;
   }
-  
-#bubbleTrio {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-}
 
-.bubble {
-    width: 50px;
-    height: 50px;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 100%;
-    line-height: 50px;
-    text-align: center;
-}
+
 
 .oneWordPerHour {
     position : absolute;
-    display : flex;
+    top : 200px;
 }
+
