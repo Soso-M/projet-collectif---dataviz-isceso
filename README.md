@@ -15,6 +15,10 @@ git push origin NAME_BRANCHE <br />
 ## Switch branch
 git checkout NAME_BRANCHE
 
+## Merge branch
+git checkout master
+git merge NAME_BRANCH
+
 ## pull
 git pull
 
