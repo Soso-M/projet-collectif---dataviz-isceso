@@ -8,6 +8,10 @@
     font-family: 'Fredoka One', cursive;
     background-color: #5C8B9A;
   }
+.depart {
+    position:absolute;
+    bottom:5%;
+    left:1%;
 
 h1 {
     text-align: center;
