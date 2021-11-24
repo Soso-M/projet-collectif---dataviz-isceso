@@ -12,7 +12,7 @@
     position:absolute;
     bottom:5%;
     left:1%;
-
+}
 h1 {
     text-align: center;
     font-size: 5em;
@@ -78,7 +78,9 @@ h1 {
 }
 
 #div_horloge {
-    text-align: bottom;
+    text-align: right;
+    background-color: red;
+    font-size: xx-large;
 }
 
 /* style de la deuxième page */
@@ -87,20 +89,16 @@ h1 {
     height: 400px;
     position: relative;
   }
-  
-#bubbleTrio {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-}
 
 .bubble {
-    width: 50px;
-    height: 50px;
+    width: 500px;
+    height: 500px;
     flex-direction: column;
-    background-color: white;
+    background-color: #CBD971;
     border-radius: 100%;
-    line-height: 50px;
+    line-height: 500px;
     text-align: center;
+    font-size: xx-large;
+    
 }
 
