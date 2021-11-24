@@ -37,6 +37,11 @@ app.get('/', (req, res) => {
     res.render('menu')
 })
 
+// que récupère t on à l'adresse URL localhost:3000/clock
+app.get('/clock', (req, res) => {
+    res.render('clock')
+})
+
 //que récupère t on à l'adresse localhost:3000/:lang
 app.get('/:lang', async function (req, res) {
     console.log(req.params);
