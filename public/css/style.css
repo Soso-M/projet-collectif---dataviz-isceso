@@ -12,6 +12,13 @@
     position:absolute;
     bottom:5%;
     left:1%;
+
+}
+.lune {
+    position:absolute;
+    top:5%;
+    right:1%;
+    border-radius: 100%;
 }
 h1 {
     text-align: center;
@@ -73,16 +80,23 @@ h1 {
     width: 100%;
     height: 100%;
     position: relative;
-    top : 25%;
+    margin-top : 75px;
     justify-content: center; 
 }
-
+#title > p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
 #div_horloge {
     text-align: right;
-    background-color: red;
     font-size: xx-large;
     position: relative;
     top: 40px; left: 40px;
+    text-align: center;
+    font-size: 55px;
+    margin-top:140px;
+    
 }
 
 /* style de la deuxième page */
@@ -90,6 +104,8 @@ h1 {
     width: 400px;
     height: 400px;
     position: relative;
+    top: 80px;
+    left: 30%;
   }
 
 
@@ -109,9 +125,21 @@ h1 {
     flex-direction: column;
     background-color: #CBD971;
     border-radius: 100%;
+    border: 3px solid;
     line-height: 500px;
     text-align: center;
     font-size: xx-large;
     
 }
 
+
+.bubble {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .bubble:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */

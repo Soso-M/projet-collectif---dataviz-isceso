@@ -53,6 +53,7 @@
         </ul>
     </nav>
     <div id= "container_menu">
+        <div id="div_horloge"></div>
         <div id= "title">
             <h1>What word is it ?</h1> 
               <div id="time">
@@ -108,6 +109,23 @@
 
         </div>
     </div>
+    <script type="text/javascript">
+        window.onload=function() {
+            horloge('div_horloge');
+        };
     
+        function horloge(el) {
+            if(typeof el=="string") { el = document.getElementById(el); }
+            function actualiser() {
+            var date = new Date();
+            var str = date.getHours();
+            str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
+            str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
+            el.innerHTML = str;
+        }
+        actualiser();
+        setInterval(actualiser,1000);
+        }
+    </script>
 </body>
 </html>
