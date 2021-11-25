@@ -12,8 +12,14 @@
     position:absolute;
     bottom:5%;
     left:1%;
-
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition:         transform .3s ease-in-out;
 }
+.depart:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+
 .lune {
     position:absolute;
     top:5%;
