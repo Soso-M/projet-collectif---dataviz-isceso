@@ -1,8 +1,8 @@
 # How to run the project
 
 git checkout NAME_BRANCHE <br />
-npm install <br />
-node index.js <br />
+npm install nodemon (if not in node-modules) <br />
+npm run dev <br />
 
 go to http://localhost:3000/
 
